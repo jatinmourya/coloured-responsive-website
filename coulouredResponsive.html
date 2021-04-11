@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Structure</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Courier New', Courier, monospace;
+        box-sizing: border-box;
+    }
+
+    body {
+        padding: 0px 10px;
+        position: relative;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .navbar {
+        margin-top: 10px;
+        padding: 7px;
+        height: 80px;
+        text-align: center;
+        background-color: #818181;
+    }
+
+    .footer {
+        margin-top: 10px;
+        padding: 10px;
+        height: 100px;
+        background-color: #95BF74;
+    }
+
+    .header {
+        margin-top: 10px;
+        padding: 7px;
+        height: 40px;
+        text-align: center;
+        background-color: #b199dd;
+    }
+
+    .container {
+        margin-top: 10px;
+        height: auto;
+        display: grid;
+        grid-template-columns: 300px auto 170px;
+        grid-gap: 10px;
+    }
+
+    .left {
+        padding: 7px;
+        height: auto;
+        text-align: center;
+        background-color: #44b6db;
+
+    }
+
+    .right {
+        padding: 7px;
+        height: auto;
+        text-align: center;
+        background-color: #716ed6;
+
+
+    }
+
+    .mainpage {
+        padding: 10px;
+        height: auto;
+        position: relative;
+        text-align: center;
+        background-color: rgb(255, 156, 156);
+
+    }
+
+    .main-con {
+        padding: 10px;
+        height: auto;
+        text-align: center;
+
+    }
+
+    @media only screen and (max-width:1000px) {
+        .container {
+            grid-template-columns: 250px auto;
+        }
+
+        .right {
+            display: none;
+        }
+
+    }
+
+    @media only screen and (max-width:850px) {
+        .container {
+            grid-template-columns: 100%;
+        }
+
+        .left,
+        .right {
+            display: none;
+        }
+
+    }
+</style>
+
+<body>
+    <div class="navbar">
+        This is navbar
+    </div>
+    <div class="header">
+        This is header
+    </div>
+    <div class="container">
+        <div class="left">
+            This is left content
+        </div>
+        <div class="mainpage">
+            <div class="main-con">
+                This is main page
+                <pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </pre>
+            </div>
+        </div>
+        <div class="right">aside content</div>
+    </div>
+    <footer class="footer">
+        <span>Footer</span>
+    </footer>
+</body>
+
+</html>
